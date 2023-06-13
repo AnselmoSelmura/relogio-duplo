@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="app.css">
     <title>Relogio</title>
 </head>
 <body>
-    <div class="cono-container">
+    <div class="crono-container">
         <div class="time-container">
-            <span>00:00:00</span>
+            <span data-time>00:00:00</span>
         </div>
         <div class="butons-crono">
-            <button> Iniciar </button>
-            <button> Pausar </button>
-            <button> Parar </button>
+            <button data-start="start"> Iniciar </button>
+            <button data-pouse disabled> Pausar </button>
+            <button data-stop disabled> Parar </button>
         </div>
     </div>
     
-    <script url="../app.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
